@@ -1,0 +1,170 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  -webkit-box-shadow: 0 0 1rem #909;
+          box-shadow: 0 0 1rem #909;
+  padding: 2rem 1rem;
+  width: 90%;
+  min-height: 60%;
+  border-radius: 12px;
+  background: #909;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .GreetCustomerArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: lavender;
+  font-weight: bold;
+}
+
+main .NavBtnsArea {
+  margin: 1rem 0;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .NavBtnsArea button {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: blue;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 0.2rem #fff;
+          box-shadow: 0 0 0.2rem #fff;
+  color: #fff;
+}
+
+main .NavBtnsArea button:hover {
+  background: rgba(0, 0, 255, 0.4);
+}
+
+main .QuestionArea {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+main .QuestionArea .SurveyLabel {
+  font-size: 2rem;
+  font-weight: bold;
+  color: lightblue;
+}
+
+main .QuestionArea #SurveyHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .QuestionArea #SurveyHeader .questionPosition {
+  margin-left: auto;
+  font-weight: bold;
+  color: lightgreen;
+}
+
+main .QuestionArea .SubmitConfirmation {
+  font-size: 1.2rem;
+  color: lawngreen;
+}
+
+main .QuestionArea .Question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .QuestionArea .Question .QuestionString {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: lavender;
+  margin: 1rem auto;
+}
+
+main .ThankingArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 0;
+  color: lavenderblush;
+}
+
+main .WelcomeScreenArea {
+  padding: 4rem 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .WelcomeScreenArea h1 {
+  padding: 1rem;
+}
+
+main .WelcomeScreenArea img {
+  max-width: 30%;
+}
+
+@media (min-width: 750px) {
+  main {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=Main.css.map */
