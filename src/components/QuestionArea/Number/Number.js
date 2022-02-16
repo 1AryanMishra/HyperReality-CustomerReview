@@ -1,12 +1,12 @@
 //Importing CSS for Text Component
-import './css/Text.css';
+import './css/Number.css';
 
 
 //Importing useState to manage Response State
 import { useState } from 'react';
 
 
-function Text({question, answerValue}){
+function Number({question, answerValue}){
 
     //Declaring Response State
     const [value, setValue] = useState(() => {
@@ -27,7 +27,7 @@ function Text({question, answerValue}){
     answerValue.answer = value;
 
     return(
-        <input type='number' className="Text" value={value ? value : ''} onChange={(e) => {
+        <input type='number' className="Number" value={value ? value : ''} onChange={(e) => {
 
             /* Saving Response */
 
@@ -44,4 +44,4 @@ function Text({question, answerValue}){
 }
 
 
-export default Text;
+export default Number;

@@ -9,7 +9,7 @@ import { DataContext } from '../Main/Main';
 //Importing Some Answer type Components
 import Radio from './Radio/Radio';
 import TextField from './TextField/TextField';
-import Text from './Text/Text';
+import Number from './Number/Number';
 
 
 
@@ -21,7 +21,7 @@ function QuestionArea(){
     //Some flag variable to check for InputType
     const [radio, setRadio] = useState(false);
     const [textfield, setTextField] = useState(false);
-    const [text, setText] = useState(false);
+    const [number, setNumber] = useState(false);
     
 
     if(!questionData){
@@ -53,15 +53,15 @@ function QuestionArea(){
         if(!radio && questionData.inputType === 'radio'){
             setTextField(false);
             setRadio(true);
-            setText(false);
+            setNumber(false);
         }
         else if(!textfield && questionData.inputType === 'textfield'){
             setRadio(false);
-            setText(false);
+            setNumber(false);
             setTextField(true);
         }
-        else if(!text && questionData.inputType === 'text'){
-            setText(true);
+        else if(!number && questionData.inputType === 'number'){
+            setNumber(true);
             setTextField(false);
             setRadio(false);
         }
@@ -83,7 +83,7 @@ function QuestionArea(){
                         radio ? <Radio key={questionData.question} question={questionData.question} answerValue={questionData} values={questionData.values}/> : null
                     }
                     {
-                        text ? <Text question={questionData.question} answerValue={questionData}/> : null
+                        number ? <Number question={questionData.question} answerValue={questionData}/> : null
                     }
 
                 </div>

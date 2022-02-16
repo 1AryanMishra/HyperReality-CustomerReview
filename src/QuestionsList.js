@@ -19,7 +19,7 @@ export const questions = [
 
     {
         question : 'On a scale of 1-10, how would you recommend us to your friends and family?',
-        inputType : 'text',
+        inputType : 'number',
         values : []
     },
 
